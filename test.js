@@ -11,35 +11,35 @@ const config7 = [['(', ')'], ['[', ']'], ['{', '}'], ['|', '|']];
 
 it('should check if brackets sequence is correct 1', () => {
   assert.equal(check('()', config1), true);
-});
+});//1
 
 it('should check if brackets sequence is correct 2', () => {
   assert.equal(check('((()))()', config1), true);
-});
+});//2
 
 it('should check if brackets sequence is not correct 3', () => {
   assert.equal(check('())(', config1), false);
-});
+});//3
 
 it('should check if brackets sequence is correct 4', () => {
   assert.equal(check('([{}])', config3), true);
-});
+});//4
 
 it('should check if brackets sequence is not correct 5', () => {
   assert.equal(check('[(])', config2), false);
-});
+});//5
 
 it('should check if brackets sequence is correct 6', () => {
   assert.equal(check('[]()', config2), true);
-});
+});//6
 
 it('should check if brackets sequence is correct 7', () => {
   assert.equal(check('[]()(', config2), false);
-});
+});//7
 
 it('should check if brackets sequence is correct 8', () => {
   assert.equal(check('||', config4), true);
-});
+});//8
 
 it('should check if brackets sequence is correct 9', () => {
   assert.equal(check('|()|', config5), true);
